@@ -1,0 +1,27 @@
+package day06_IfElseStatements;
+
+import java.util.Scanner;
+
+public class C01_IfElseStatements {
+    public static void main(String[] args) {
+        //kullacidan ucgenin uzunluklarini iste 3 kenar esitse
+        // eskenar ucgen degilse eskenar degil
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ucgenin kenar uzunluklkarini giriniz");
+        double kenar1 = scan.nextDouble();
+        double kenar2 = scan.nextDouble();
+        double kenar3 = scan.nextDouble();
+
+        if (kenar1==kenar2 && kenar2==kenar3 && kenar1>0){
+            System.out.println("Eskenar Ucgen");
+
+        }else{
+            System.out.println("Eskenar degil");
+        }
+
+
+
+
+    }
+}
